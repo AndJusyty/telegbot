@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Telegram WebApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+ 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Выберите дату:</h2>
+  <input id="datepicker" placeholder="Нажмите для выбора даты" readonly />
+
+  <h2>Выберите время:</h2>
+  <input id="timepicker" placeholder="Нажмите для выбора времени" readonly />
+
+  <h2>Таймзона:</h2>
+  <select id="timezone">
+    <option value="UTC">UTC</option>
+    <option value="Europe/Moscow">Moscow</option>
+    <option value="Asia/Tokyo">Tokyo</option>
+    <option value="America/New_York">New York</option>
+  </select>
+
+  <button id="doneBtn">Готово</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
